@@ -1,0 +1,369 @@
+
+
+/* Home */
+
+h1 {
+    float: right;
+    color: #F9DDD7;
+}
+
+img {
+    float: left;
+}
+
+menu {
+    float: left;
+}
+
+body {
+    font-family: 'Playfair Display', serif;
+    margin: 0;
+    width: 100%;
+    
+}
+
+header {
+    width: 100%;
+    height: 70px;
+    background-color: #E64219;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 2;
+}
+
+#btn-menu {
+    display: none;
+    float: right;
+}
+
+header label {
+    display: block;
+}
+
+header label :hover {
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+
+    position: absolute;
+    background: #E9967A;
+    width: 20%;
+    top: 60px;
+    margin-left: -70%;
+    transition: all 0.5s;
+}
+
+.menu ul {
+    order: -1;
+
+    margin: 0;
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.menu li {
+    border-top: 1px solid #FFFFFF;
+}
+
+.menu li a {
+    display: block;
+    padding: 15px 20px;
+    color: #E9967A;
+    text-decoration: none;
+    color: #fff;
+}
+
+.menu li :hover {
+    background: rgba(0, 0, 0, 0.3);
+}
+
+.menu ul li ul {
+    display: none;
+    position: absolute;
+    color: #F9DDD7;
+}
+
+.menu ul li:hover ul {
+    display: block;
+    color: #F9DDD7;
+    background: rgba(0, 0, 0, 0.3);
+}
+
+#btn-menu:checked~.menu {
+    margin: 0;
+}
+
+
+.fraseIndex {
+    width: 70%;
+    margin: 100px auto;
+    padding: 80px;
+    border-top: 3px solid #E64219;
+    border-bottom: 3px solid #E64219;
+    text-align: center;
+    
+}
+
+.conteneder{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+    width: 100%;
+    max-width: 1000%;
+    font-size: 18px;
+    line-height: 25px;
+    text-align: center;
+    align-items: center;
+    padding: 50px;
+    
+}
+
+.conteneder article {
+    display: inline-block;
+    padding: 10px;
+    color: #E9967A;
+    background-color: #fff;
+    box-shadow: rgba(0, 0, 0, 0.3); 
+}
+
+
+.footerColor {
+    
+    background-color: #F9DDD7;
+}
+
+.footerCenter {
+    align-items: center;
+    justify-items: center;
+}
+
+/*Home responsive*/
+@media screen and (max-width: 750px) {
+    body {
+        font-size: 17px;
+    }
+
+    .conteneder {
+        background: #F9DDD7;
+        display: block;
+        grid-gap: 20px;
+        font-size: 12px;
+        margin: 50px;
+        line-height: 20px;
+        text-align: center;
+        align-items: center;
+        margin: auto;
+    }
+
+    h1 {
+        font-size: 18px;
+    }
+    .fraseIndex {
+        font-size: 12px;
+    }
+}
+
+@media screen and (min-width: 750px) and (orientation: landscape) {
+    body {
+        flex-direction: row;
+      }
+}
+@media screen and (max-width: 1024px) {
+    body {
+        font-size: 18px;
+    }
+}
+
+@media all and (orientation: portrait) {
+    body {
+        flex-direction: column;
+      }
+}
+
+ 
+/* Presupuesto */
+
+.titulo {
+    width: 100%;
+    height: 100px;
+    color: #E64219;
+    margin: 10px;
+    padding: 5px;
+    text-align: center;
+    align-items: center;
+    position: relative;
+    z-index: -1;
+}
+
+
+.primerBloque{
+    border-top: none;
+    border-bottom: 3px double #E9967A;
+    border-right: none;
+    border-left: none;
+    background-color: #F9DDD7;
+}
+
+.textoBloque {
+    color: #2b0a02;
+
+}
+
+.segundoBloque {
+    border-top: none;
+    border-bottom: 3px double #e64219;
+    border-right: none;
+    border-left: none; 
+}
+.textoBloqueDos {
+    color: #2b0a02;
+}
+
+.bordeCuadro {
+    border-top-width: 10px;
+    border-right-width: 5px;
+    border-bottom-width: 10px;
+    border-left-width: 5px;
+    border-color: #e64219;
+}
+
+/* Proyectos */
+
+
+tr {
+    color: #e9967a;  
+}
+td {
+    font-size: 12px;
+    font-style: italic;
+    color: #e64219;
+    background-color: #F9DDD7;
+    align-content: flex-start;
+}
+
+td, th {
+    border: 2px solid #932260;
+    text-align: left;
+    padding: 5px;
+}
+
+.bodycuadro {
+    margin: 50px;
+}
+
+
+/* Clientes */
+.seccionClientes {
+    margin: 10rem 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.seccionClientes h3 {
+    font-size: 2rem;
+    width: 100%;
+    height: 100px;
+    color: #E64219;    
+}
+.seccionClientes div p {
+    font-size: 17px;
+    display: flex;
+    margin: 5rem 0;
+    
+    justify-content: center;
+    text-align: justify;
+    line-height: 20px;
+    
+    color: #e9967a;
+    
+}
+.gradiente {
+    width: 100%;
+    margin: 4rem;
+    background: rgb(230,66,25);
+    background: -moz-linear-gradient(0deg, rgba(230,66,25,1) 0%, rgba(233,150,122,1) 35%, rgba(250,243,243,1) 100%);
+    background: -webkit-linear-gradient(0deg, rgba(230,66,25,1) 0%, rgba(233,150,122,1) 35%, rgba(250,243,243,1) 100%);
+    background: linear-gradient(0deg, rgba(230,66,25,1) 0%, rgba(233,150,122,1) 35%, rgba(250,243,243,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#e64219",endColorstr="#faf3f3",GradientType=1);
+}
+/* Contacto */
+#contacto {
+    
+        padding: 60px 0;
+        overflow: hidden;
+}
+
+/* Nosotros */
+
+.nosotrosCards-container {
+    display: grid;
+    grid-template-rows: repeat(3,1fr);
+    grid-template-columns:repeat(3,1fr);;
+    grid-gap: 50px;
+    grid-auto-rows: 1fr;
+    grid-auto-columns: 1fr;
+    grid-auto-flow: dense;
+    justify-content: space-evenly;
+    align-content: space-evenly;
+    justify-items: start;
+    align-items: start;
+    
+} 
+
+.integrante-card {
+    display: block;
+    font-size: 17px;
+    height: 600px;
+    margin: 10px;
+    padding: 10px;
+} 
+.integrante-card h2 {
+    color: #ee693d;
+    background: rgba(204, 61, 4, 0.11)
+}
+
+.integrante-card ul {
+    color:#ee693d;
+    text-align: justify;
+    line-height: 30px;
+    margin: 5px;
+    padding: 5px;
+    width: 100%;
+    
+}
+.integrante-card ul li {
+    list-style: none;
+}
+
+
+.integrante-card:first-child {
+    
+    grid-row: 1/3;
+    
+}
+.integrante-card:nth-child(2) {
+    
+    grid-row: 1/3;
+}
+.integrante-card:nth-child(3) {
+    
+    grid-row: 1/3;
+}
+
+
+
+/*# sourceMappingURL=estilos.css.map */

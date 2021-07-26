@@ -1,0 +1,14 @@
+$type: rosa;
+
+h1 {
+    @if $type==base {
+        color: #E64219;  
+    }
+    @else if $type==medio {
+        color: #E9967A;
+    } @else if $type==rosa {
+        color: #F9DDD7;
+    }@else {
+        color: #fff;
+    }
+}
